@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,500&family=Rubik:wght@300;400;500;600&display=swap");
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1,
+h4,
+p,
+a {
+  color: #fff;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ul {
+  list-style: none;
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+  padding: 14px 32px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: #f8d90f;
+  color: #222;
+  border: 2px solid #ffffff;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-light {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #f8d90f;
+}
+
+.btn-dark:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.btn-light:hover {
+  box-shadow: 0 12px 10px 0 #000;
 }
